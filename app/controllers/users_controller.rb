@@ -1,24 +1,26 @@
 class UsersController < ApplicationController
-    # GET /users
 
+    # GET /users
     def index
         users = User.all
-        render json: users
+        users.to_json
     end
 
    # GET /users/:id
     def show
         user = User.find(params[:id])
-        render json: user
+        user.to_json
     end
 
     #POST/users
     def create
         user = User.new(user_params)
         if user.save
-          render json: user, status: :created
+            status 201
+            user.to_json
         else
-          render json: { error: 'Failed to create user.' }, status: :unprocessable_entity
+            status 422
+            { error: "Failed to create user" }.to_json
         end
     end
 
