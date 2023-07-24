@@ -21,5 +21,15 @@ class MembershipsController < ApplicationController
         end
     end
 
+      # DELETE /memberships/:id
+    def destroy
+        membership = Membership.find(params[:id])
+        if membership.destroy
+        head :no_content
+        else
+        render json: { error: 'Failed to delete membership.' }, status: :unprocessable_entity
+        end
+    end
+
     
 end
