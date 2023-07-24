@@ -40,4 +40,11 @@ class ApplicationController < Sinatra::Base
   delete "/memberships/:id" do
     MembershipsController.destroy
   end
+
+
+   # Routes for PostsController
+    get "/posts" do
+      PostsController.index
+    end
+    
 end
