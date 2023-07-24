@@ -10,7 +10,8 @@ class ApplicationController < Sinatra::Base
 
     #  Routes for UsersController
   get "/users" do
-    UsersController.index
+    controller = UsersController.new
+    controller.index
   end
 
   get "/users/:id" do
