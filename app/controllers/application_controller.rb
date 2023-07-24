@@ -59,11 +59,13 @@ class ApplicationController < Sinatra::Base
     end
 
     get "/posts/:id" do
-      PostsController.show
+      controller = PostsController.new
+      controller.show
     end
 
     post "/posts" do
-      PostsController.create
+      controller = PostsController.new
+      controller.create
     end
 
     delete "/posts/:id" do
