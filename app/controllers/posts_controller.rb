@@ -30,5 +30,11 @@ class PostsController < ApplicationController
         render json: { error: 'Failed to delete post.' }, status: :unprocessable_entity
         end
     end
-    
+
+    private
+
+    def post_params
+        params.require(:post).permit(:title, :content, :user_id)
+    end
+
 end
