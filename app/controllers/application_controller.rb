@@ -2,16 +2,16 @@ class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
     # Loading the controllers
-    require_relative 'users_controller'
-    require_relative 'memberships_controller'
-    require_relative 'posts_controller'
+    # require_relative 'users_controller'
+    # require_relative 'memberships_controller'
+    # require_relative 'posts_controller'
 
    
 
     #  Routes for UsersController
   get "/users" do
-    controller = UsersController.new
-    controller.index
+   users = User.all
+   users.to_json
   end
 
   get "/users/:id" do
