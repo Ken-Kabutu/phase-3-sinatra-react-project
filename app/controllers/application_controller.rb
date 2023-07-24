@@ -15,8 +15,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/users/:id" do
-    controller = UsersController.new
-    controller.show
+    user = User.find(params[:id])
+    user.to_json
   end
 
   post "/users" do
