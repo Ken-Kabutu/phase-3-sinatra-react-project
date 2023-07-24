@@ -5,5 +5,11 @@ class PostsController < ApplicationController
         render json: posts
     end
 
+     # GET /posts/:id
+    def show
+        post = Post.find(params[:id])
+        render json: post
+    end
+
     
 end
