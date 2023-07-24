@@ -48,8 +48,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/memberships/:id" do
-    controller = MembershipsController.new
-    controller.show
+    membership = Membership.find(params[:id])
+    membership.to_json
   end
 
   post "/memberships" do
