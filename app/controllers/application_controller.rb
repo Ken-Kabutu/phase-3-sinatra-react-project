@@ -32,4 +32,8 @@ class ApplicationController < Sinatra::Base
   get "/memberships/:id" do
     MembershipsController.show
   end
+
+  post "/memberships" do
+    MembershipsController.create
+  end
 end
