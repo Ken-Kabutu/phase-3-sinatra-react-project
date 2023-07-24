@@ -20,7 +20,8 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/users" do
-    UsersController.create
+    controller = UsersController.new
+    controller.create
   end
 
   delete "/users/:id" do
