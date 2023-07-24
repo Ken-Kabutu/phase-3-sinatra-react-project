@@ -76,8 +76,8 @@ class ApplicationController < Sinatra::Base
 
    # Routes for PostsController
     get "/posts" do
-      controller = PostsController.new
-      controller.index
+      posts = Post.all
+      posts.to_json
     end
 
     get "/posts/:id" do
