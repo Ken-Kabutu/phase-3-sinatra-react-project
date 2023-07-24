@@ -9,7 +9,7 @@ class UsersController < ApplicationController
    # GET /users/:id
     def show
         user = User.find(params[:id])
-        user.to_json
+        render json: user
     end
 
     #POST/users
