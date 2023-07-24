@@ -5,5 +5,9 @@ class MembershipsController < ApplicationController
         render json: memberships
     end
 
-    
+      # GET /memberships/:id
+    def show
+        membership = Membership.find(params[:id])
+        render json: membership
+    end
 end
