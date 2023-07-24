@@ -50,5 +50,12 @@ class ApplicationController < Sinatra::Base
     get "/posts/:id" do
       PostsController.show
     end
-    
+
+    post "/posts" do
+      PostsController.create
+    end
+
+    delete "/posts/:id" do
+      PostsController.destroy
+    end
 end
