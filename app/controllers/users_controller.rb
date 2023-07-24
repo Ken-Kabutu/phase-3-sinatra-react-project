@@ -39,9 +39,10 @@ class UsersController < ApplicationController
     def destroy
         user = User.find(params[:id])
         if user.destroy
-        head :no_content
+          status 204
         else
-        render json: { error: 'Failed to delete user.' }, status: :unprocessable_entity
+          status 422
+          { error: "Failed to delete user" }.to_json
         end
     end
 
