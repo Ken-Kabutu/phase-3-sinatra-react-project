@@ -54,7 +54,8 @@ class ApplicationController < Sinatra::Base
 
    # Routes for PostsController
     get "/posts" do
-      PostsController.index
+      controller = PostsController.new
+      controller.index
     end
 
     get "/posts/:id" do
