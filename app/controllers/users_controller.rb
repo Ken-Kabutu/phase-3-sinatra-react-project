@@ -21,4 +21,15 @@ class UsersController < ApplicationController
           render json: { error: 'Failed to create user.' }, status: :unprocessable_entity
         end
     end
+
+      # DELETE /users/:id
+    def destroy
+        user = User.find(params[:id])
+        if user.destroy
+        head :no_content
+        else
+        render json: { error: 'Failed to delete user.' }, status: :unprocessable_entity
+        end
+    end
+
 end
