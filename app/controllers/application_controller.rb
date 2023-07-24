@@ -43,8 +43,8 @@ class ApplicationController < Sinatra::Base
 
     # Routes for MembershipsController
   get "/memberships" do
-    controller = MembershipsController.new
-    controller.index
+    memberships = Membership.all
+    memberships.to_json
   end
 
   get "/memberships/:id" do
