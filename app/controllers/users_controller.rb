@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     # GET /users
     def index
         users = User.all
-        users.to_json
+        render json: users
     end
 
    # GET /users/:id
