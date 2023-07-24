@@ -25,7 +25,8 @@ class ApplicationController < Sinatra::Base
   end
 
   delete "/users/:id" do
-    UsersController.destroy
+    controller = UsersController.new
+    controller.destroy
   end
 
 
