@@ -42,11 +42,13 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/memberships" do
-    MembershipsController.create
+    controller = MembershipsController.new
+    controller.create
   end
 
   delete "/memberships/:id" do
-    MembershipsController.destroy
+    controller = MembershipsController.new
+    controller.destroy
   end
 
 
