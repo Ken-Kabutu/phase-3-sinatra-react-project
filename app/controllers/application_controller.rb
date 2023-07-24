@@ -46,5 +46,9 @@ class ApplicationController < Sinatra::Base
     get "/posts" do
       PostsController.index
     end
+
+    get "/posts/:id" do
+      PostsController.show
+    end
     
 end
