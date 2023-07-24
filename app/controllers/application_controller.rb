@@ -32,7 +32,8 @@ class ApplicationController < Sinatra::Base
 
     # Routes for MembershipsController
   get "/memberships" do
-    MembershipsController.index
+    controller = MembershipsController.new
+    controller.index
   end
 
   get "/memberships/:id" do
