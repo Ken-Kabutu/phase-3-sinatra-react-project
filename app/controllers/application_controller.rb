@@ -20,8 +20,14 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/users" do
-    controller = UsersController.new
-    controller.create
+    user = User.new(params)
+    if user.save
+      status 201 
+      user.to_json
+    else
+      status 400 
+      user.errors.to_json
+    end
   end
 
   delete "/users/:id" do
