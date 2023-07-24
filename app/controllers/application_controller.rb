@@ -69,6 +69,7 @@ class ApplicationController < Sinatra::Base
     end
 
     delete "/posts/:id" do
-      PostsController.destroy
+      controller = PostsController.new
+      controller.destroy
     end
 end
