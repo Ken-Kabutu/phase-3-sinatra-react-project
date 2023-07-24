@@ -31,8 +31,13 @@ class ApplicationController < Sinatra::Base
   end
 
   delete "/users/:id" do
-    controller = UsersController.new
-    controller.destroy
+    user = User.find(params[:id])
+    if user.destroy
+      status 204 
+    else
+      status 500 
+      { error: "Failed to delete the user." }.to_json
+    end
   end
 
 
