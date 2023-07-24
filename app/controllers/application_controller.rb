@@ -15,4 +15,8 @@ class ApplicationController < Sinatra::Base
     UsersController.show
   end
 
+  post "/users" do
+    UsersController.create
+  end
+
 end
