@@ -86,12 +86,23 @@ class ApplicationController < Sinatra::Base
     end
 
     post "/posts" do
-      controller = PostsController.new
-      controller.create
+      post = Post.new(params)
+      if post.save
+        status 201 # Created
+        post.to_json
+      else
+        status 400 # Bad Request
+        post.errors.to_json
+      end
     end
 
     delete "/posts/:id" do
-      controller = PostsController.new
-      controller.destroy
+      post = Post.find(params[:id])
+      if post.destroy
+        status 204 # No Content
+      else
+        status 500 # Internal Server Error
+        { error: "Failed to delete the post." }.to_json
+      end
     end
 end
