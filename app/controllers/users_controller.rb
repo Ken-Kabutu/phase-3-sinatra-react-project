@@ -16,11 +16,9 @@ class UsersController < ApplicationController
     def create
         user = User.new(user_params)
         if user.save
-            status 201
-            user.to_json
+            render json: user, status: :created
         else
-            status 422
-            { error: "Failed to create user" }.to_json
+            render json: { error: 'Failed to create user.' }, status: :unprocessable_entity
         end
     end
 
