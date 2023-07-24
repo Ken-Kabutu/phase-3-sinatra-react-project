@@ -36,4 +36,8 @@ class ApplicationController < Sinatra::Base
   post "/memberships" do
     MembershipsController.create
   end
+
+  delete "/memberships/:id" do
+    MembershipsController.destroy
+  end
 end
