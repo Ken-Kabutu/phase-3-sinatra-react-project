@@ -31,5 +31,9 @@ class MembershipsController < ApplicationController
         end
     end
 
-    
+    private
+
+    def membership_params
+      params.require(:membership).permit(:plan_name, :pre_built_workouts, :gym_access, :class_access, :studio_access, :meal_plans, :personal_training_sessions, :price, :user_id)
+    end
 end
