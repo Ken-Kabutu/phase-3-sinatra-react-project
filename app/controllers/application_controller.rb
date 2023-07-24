@@ -28,4 +28,8 @@ class ApplicationController < Sinatra::Base
   get "/memberships" do
     MembershipsController.index
   end
+
+  get "/memberships/:id" do
+    MembershipsController.show
+  end
 end
