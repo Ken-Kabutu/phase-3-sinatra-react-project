@@ -53,8 +53,14 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/memberships" do
-    controller = MembershipsController.new
-    controller.create
+    membership = Membership.new(params)
+    if membership.save
+      status 201 # Created
+      membership.to_json
+    else
+      status 400 # Bad Request
+      membership.errors.to_json
+    end
   end
 
   delete "/memberships/:id" do
