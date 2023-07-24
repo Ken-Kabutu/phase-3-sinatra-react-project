@@ -15,7 +15,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/users/:id" do
-    UsersController.show
+    controller = UsersController.new
+    controller.show
   end
 
   post "/users" do
