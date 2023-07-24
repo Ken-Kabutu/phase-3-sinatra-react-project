@@ -22,25 +22,14 @@ class UsersController < ApplicationController
         end
     end
 
-     # PUT /users/:id
-    def update
-        user = User.find(params[:id])
-        if user.update(user_params)
-            user.to_json
-        else
-            status 422
-            { error: "Failed to update user" }.to_json
-        end
-    end
 
       # DELETE /users/:id
     def destroy
         user = User.find(params[:id])
         if user.destroy
-          status 204
+          head :no_content
         else
-          status 422
-          { error: "Failed to delete user" }.to_json
+            render json: { error: 'Failed to delete user.' }, status: :unprocessable_entity
         end
     end
 
