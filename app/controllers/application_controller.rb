@@ -6,7 +6,9 @@ class ApplicationController < Sinatra::Base
     require_relative 'memberships_controller'
     require_relative 'posts_controller'
 
-     # Routes for UsersController
+   
+
+    #  Routes for UsersController
   get "/users" do
     UsersController.index
   end
