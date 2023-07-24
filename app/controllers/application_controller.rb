@@ -64,8 +64,13 @@ class ApplicationController < Sinatra::Base
   end
 
   delete "/memberships/:id" do
-    controller = MembershipsController.new
-    controller.destroy
+    membership = Membership.find(params[:id])
+    if membership.destroy
+      status 204 
+    else
+      status 500 
+      { error: "Failed to delete the membership." }.to_json
+    end
   end
 
 
