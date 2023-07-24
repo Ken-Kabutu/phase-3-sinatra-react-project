@@ -22,5 +22,10 @@ class ApplicationController < Sinatra::Base
   delete "/users/:id" do
     UsersController.destroy
   end
-  
+
+
+    # Routes for MembershipsController
+  get "/memberships" do
+    MembershipsController.index
+  end
 end
