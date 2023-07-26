@@ -107,3 +107,9 @@ The Membership model represents a gym membership plan and includes the following
 * price: The price of the membership plan.
 
 ### Post
+
+The Post model represents a fitness-related post and includes the following attributes:
+
+* title: The title of the post.
+* content: The content of the post.
+* user_id: The ID of the user who created the post.
