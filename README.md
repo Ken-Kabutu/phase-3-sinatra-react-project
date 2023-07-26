@@ -89,14 +89,19 @@ The FitTech Gym backend uses the following data models:
 
 The User model represents a gym member and includes the following attributes:
 
-## Resources
+* 'name': The name of the user.
+* 'email': The email address of the user.
+* 'password_digest': The hashed password of the user.
 
-- [create-react-app][]
-- [dbdiagram.io][]
-- [Postman][postman download]
+### Membership
 
-[create-react-app]: https://create-react-app.dev/docs/getting-started
-[create repo]: https://docs.github.com/en/get-started/quickstart/create-a-repo
-[dbdiagram.io]: https://dbdiagram.io/
-[postman download]: https://www.postman.com/downloads/
-[network tab]: https://developer.chrome.com/docs/devtools/network/
+The Membership model represents a gym membership plan and includes the following attributes:
+
+plan_name: The name of the membership plan.
+pre_built_workouts: The number of pre-built workouts included in the plan.
+gym_access: A boolean indicating if gym access is included.
+class_access: A boolean indicating if class access is included.
+studio_access: A boolean indicating if studio access is included.
+meal_plans: A boolean indicating if meal plans are included.
+personal_training_sessions: The number of personal training sessions included.
+price: The price of the membership plan.
