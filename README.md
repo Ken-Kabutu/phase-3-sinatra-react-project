@@ -56,9 +56,30 @@ ruby app.rb
 The FitTech Gym backend provides the following RESTful API endpoints:
 
 * GET /users: Fetch all users
+
 * GET /users/:id: Fetch a single user by ID
+
 * POST /users: Create a new user
+
 * DELETE /users/:id: Delete a user by ID
+
+*GET /memberships: Fetch all memberships
+
+GET /memberships/:id: Fetch a single membership by ID
+
+POST /memberships: Create a new membership
+
+DELETE /memberships/:id: Delete a membership by ID
+
+GET /posts: Fetch all posts
+
+GET /posts/:id: Fetch a single post by ID
+
+POST /posts: Create a new post
+
+DELETE /posts/:id: Delete a post by ID
+
+For detailed information about the request and response format for each endpoint, refer to the API documentation.
 
 ### Fetch Example
 
