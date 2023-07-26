@@ -25,7 +25,8 @@ PostgreSQL
 
 ### Installation
 
-
+1. Clone the repository:
+https://github.com/Ken-Kabutu/phase-3-sinatra-react-project
 
 ### Frontend Setup
 
