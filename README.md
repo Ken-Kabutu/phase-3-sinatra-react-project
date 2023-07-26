@@ -28,6 +28,12 @@ PostgreSQL
 1. Clone the repository:
 https://github.com/Ken-Kabutu/phase-3-sinatra-react-project
 
+2. Install required gems:
+
+bundle install
+
+### Database Setup
+
 ### Frontend Setup
 
 Your backend and your frontend should be in **two different repositories**.
