@@ -81,16 +81,9 @@ The FitTech Gym backend provides the following RESTful API endpoints:
 
 For detailed information about the request and response format for each endpoint, refer to the API documentation.
 
-### Fetch Example
+## Data Models
 
-Your React app should make fetch requests to your Sinatra backend! Here's an
-example:
-
-```js
-fetch("http://localhost:9292/test")
-  .then((r) => r.json())
-  .then((data) => console.log(data));
-```
+The FitTech Gym backend uses the following data models:
 
 ## Project Tips
 
