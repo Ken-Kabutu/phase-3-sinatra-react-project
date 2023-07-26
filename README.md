@@ -97,11 +97,13 @@ The User model represents a gym member and includes the following attributes:
 
 The Membership model represents a gym membership plan and includes the following attributes:
 
-plan_name: The name of the membership plan.
-pre_built_workouts: The number of pre-built workouts included in the plan.
-gym_access: A boolean indicating if gym access is included.
-class_access: A boolean indicating if class access is included.
-studio_access: A boolean indicating if studio access is included.
-meal_plans: A boolean indicating if meal plans are included.
-personal_training_sessions: The number of personal training sessions included.
-price: The price of the membership plan.
+* plan_name: The name of the membership plan.
+* pre_built_workouts: The number of pre-built workouts included in the plan.
+* gym_access: A boolean indicating if gym access is included.
+* class_access: A boolean indicating if class access is included.
+* studio_access: A boolean indicating if studio access is included.
+* meal_plans: A boolean indicating if meal plans are included.
+* personal_training_sessions: The number of personal training sessions included.
+* price: The price of the membership plan.
+
+### Post
