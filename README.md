@@ -55,6 +55,10 @@ ruby app.rb
 
 The FitTech Gym backend provides the following RESTful API endpoints:
 
+* GET /users: Fetch all users
+* GET /users/:id: Fetch a single user by ID
+* 
+
 ### Fetch Example
 
 Your React app should make fetch requests to your Sinatra backend! Here's an
