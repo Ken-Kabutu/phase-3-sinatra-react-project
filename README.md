@@ -118,4 +118,6 @@ The Post model represents a fitness-related post and includes the following attr
 
 Contributions to the FitTech Gym backend are welcome! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request. We value your feedback and collaboration.
 
-##
+## License
+
+The FitTech Gym backend is open-source and distributed under the MIT License. Feel free to use, modify, and distribute the code for your own projects. Attribution to the original authors is appreciated but not required.
