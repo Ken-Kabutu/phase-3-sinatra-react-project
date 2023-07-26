@@ -113,3 +113,9 @@ The Post model represents a fitness-related post and includes the following attr
 * title: The title of the post.
 * content: The content of the post.
 * user_id: The ID of the user who created the post.
+
+## Contributing
+
+Contributions to the FitTech Gym backend are welcome! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request. We value your feedback and collaboration.
+
+##
