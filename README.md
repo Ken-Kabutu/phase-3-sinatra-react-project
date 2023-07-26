@@ -1,4 +1,4 @@
-# Phase 3 Project Guidelines
+# FitTech Gym Management System - Backend
 
 ## Learning Goals
 
