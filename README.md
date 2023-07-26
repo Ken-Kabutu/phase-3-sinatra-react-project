@@ -63,11 +63,11 @@ The FitTech Gym backend provides the following RESTful API endpoints:
 
 * DELETE /users/:id: Delete a user by ID
 
-*GET /memberships: Fetch all memberships
+* GET /memberships: Fetch all memberships
 
-GET /memberships/:id: Fetch a single membership by ID
+* GET /memberships/:id: Fetch a single membership by ID
 
-POST /memberships: Create a new membership
+* POST /memberships: Create a new membership
 
 DELETE /memberships/:id: Delete a membership by ID
 
