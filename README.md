@@ -34,7 +34,24 @@ bundle install
 
 ### Database Setup
 
-### Frontend Setup
+1. Create a new PostgreSQL database:
+
+createdb fittech_gym_dev
+
+2. Run database migrations:
+
+rake db:migrate
+
+### Running the server
+
+* To start the backend server, run the following command:
+
+
+ruby app.rb
+
+* The server will be accessible at http://localhost:9292.
+
+## API Endpoints
 
 Your backend and your frontend should be in **two different repositories**.
 
