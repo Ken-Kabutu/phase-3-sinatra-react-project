@@ -1,6 +1,8 @@
 # FitTech Gym Management System - Backend
 
-## Learning Goals
+FitTech Gym Management System is a modern fitness application backend that provides APIs for the FitTech Gym frontend application. The backend is built using Sinatra and Ruby Active Record, providing a robust and secure foundation for managing users, memberships, and posts.
+
+## Introduction
 
 - Build a web basic API with Sinatra and Active Record to support a React
   frontend
