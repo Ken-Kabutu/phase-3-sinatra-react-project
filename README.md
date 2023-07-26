@@ -18,8 +18,9 @@ This backend repository is a part of the FitTech Gym Management System, which ai
 
 Before setting up the FitTech Gym backend, ensure that you have the following installed on your system:
 
-Ruby 
-PostgreSQL 
+* Ruby 
+
+* PostgreSQL 
 
 ## Getting Started
 
