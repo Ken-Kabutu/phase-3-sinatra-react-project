@@ -121,3 +121,7 @@ Contributions to the FitTech Gym backend are welcome! If you encounter any issue
 ## License
 
 The FitTech Gym backend is open-source and distributed under the MIT License. Feel free to use, modify, and distribute the code for your own projects. Attribution to the original authors is appreciated but not required.
+
+## Frontend Repository Link
+
+here is the react-app link; https://github.com/Ken-Kabutu/the-FitTech-Gym-frontend
