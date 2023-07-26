@@ -10,7 +10,8 @@ This backend repository is a part of the FitTech Gym Management System, which ai
 
 * User registration and authentication system.
 * CRUD operations for managing users, memberships, and posts.
-* 
+* Secure storage of user passwords with password hashing and encryption.
+* Seamless integration with the FitTech Gym frontend application.
 
 The focus of this project is **building a Sinatra API backend** that uses
 **Active Record** to access and persist data in a database, which will be used
