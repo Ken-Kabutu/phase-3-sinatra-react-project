@@ -31,6 +31,19 @@ membership_plans.each do |plan|
   )
 end
 
+puts "Created #{Membership.count} membership plans."
 
+# Seed data for posts
+5.times do
+  post = Post.create(
+    title: Faker::Lorem.sentence,
+    content: Faker::Lorem.paragraph,
+    user_id: User.pluck(:id).sample # Randomly assign a user_id from existing users
+  )
+
+  puts "Created post: #{post.title}, author: #{post.user.name}"
+end
+
+puts "Created #{Post.count} posts."
 
 puts "✅ Done seeding!"
