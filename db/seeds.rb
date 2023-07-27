@@ -6,7 +6,7 @@ puts "🌱 Seeding spices..."
 # require 'faker'
 
 # Seed data for users
-10.times do
+5.times do
     user = User.create(
       name: Faker::Name.name,
       email: Faker::Internet.email,
